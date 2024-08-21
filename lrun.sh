@@ -6,7 +6,7 @@ while IFS= read -r line; do
     if [[ $line =~ $pattern ]]; then
       contentInParentheses="${BASH_REMATCH[1]}"
       result=($contentInParentheses)
-      exePath="./build/${result[0]}"
+      exePath="./build/bin/${result[0]}"
     fi
   fi
 done <<<"$content"

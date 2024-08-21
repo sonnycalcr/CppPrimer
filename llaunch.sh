@@ -32,7 +32,7 @@ if [ $? -eq 0 ]; then
         if [[ $line =~ $pattern ]]; then
           contentInParentheses="${BASH_REMATCH[1]}"
           result=($contentInParentheses)
-          exePath="./build/${result[0]}"
+          exePath="./build/bin/${result[0]}"
           echo "start running as follows..."
           echo "=================================================="
         fi
