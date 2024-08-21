@@ -15,6 +15,9 @@ int main(int argc, char *argv[]) {
         return 2;
     }
 
+    //
+    // core codes begins
+    //
     streambuf *cinbuf = cin.rdbuf(); // save original buf
     cin.rdbuf(inputFile.rdbuf());
 
@@ -25,6 +28,9 @@ int main(int argc, char *argv[]) {
     for (const auto &w : word_count) // for each element in the map
         // print the results
         cout << w.first << " occurs " << w.second << ((w.second > 1) ? " times" : " time") << endl;
+    //
+    // core codes ends here
+    //
 
     // resume the original cin buf
     cin.rdbuf(cinbuf);
