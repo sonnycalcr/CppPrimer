@@ -14,13 +14,12 @@ int main(int argc, char *argv[]) {
         cerr << "Failed to open input data file." << endl;
         return 2;
     }
+    streambuf *cinbuf = cin.rdbuf(); // save original buf
+    cin.rdbuf(inputFile.rdbuf());
 
     //
     // core codes begins
     //
-    streambuf *cinbuf = cin.rdbuf(); // save original buf
-    cin.rdbuf(inputFile.rdbuf());
-
     map<string, size_t> word_count; // empty map from string to size_t
     string word;
     while (cin >> word)
