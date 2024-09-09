@@ -62,3 +62,8 @@ QueryResult TextQuery::query(const string &sought) const {
     else
         return QueryResult(sought, loc->second, file);
 }
+
+int main (int argc, char *argv[]) {
+    std::map<string, string> mymap;
+    return 0;
+}
