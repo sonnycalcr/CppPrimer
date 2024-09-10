@@ -1,7 +1,7 @@
 CompileFlags:
   Add: [
-    # "-std=c++17", # in windows, when using msvc, we need to use c++17, while in linux we do not need to do so, just keeping c++11 will be ok
-    "-std=c++11", # in linux, c++11 will be ok
+    "-std=c++17", # in windows, when using msvc, we need to use c++17, while in linux we do not need to do so, just keeping c++11 will be ok
+    # "-std=c++11", # in linux, c++11 will be ok
     "-I/home/sonnycalcr/EDisk/CppCodes/CppPrimer5th/includes", # you should replace this to your own include path of this project
     "-IC:\\EDisk\\CppCodes\\CppPrimerCodes\\CppPrimer5th\\includes", # you should replace this to your own include path of this project
     # -Wno-unused-value,

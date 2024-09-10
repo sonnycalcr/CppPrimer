@@ -32,6 +32,4 @@ function getExePathFromCMakeLists()
 }
 
 $exePath = getExePathFromCMakeLists
-Write-Host "start running as follows..."
-Write-Host "=================================================="
 Invoke-Expression $exePath

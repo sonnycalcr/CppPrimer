@@ -9,4 +9,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include_directories("${PROJECT_SOURCE_DIR}/includes/")
 
-add_executable(CppPrimer "./src/chaper11/p421.cpp")
+add_executable(CppPrimer "./src/chapter01/p15.cpp")
