@@ -1,10 +1,10 @@
 #include "chapter01/Sales_item.h"
 #include <iostream>
 
-void test()
+int test()
 {
     int uninitialized_var;
-    std::cout << uninitialized_var << std::endl;
+    return uninitialized_var;
 }
 
 int main()
@@ -20,6 +20,14 @@ int main()
     std::cout << "units_sold: " << units_sold << std::endl;
     std::cout << "item: " << item << std::endl;
 
-    // test();
+    for (int i = 0; i < 1000000; i++)
+    {
+        int cur = test();
+        if (cur != 0)
+        {
+            std::cout << "uninitialized_var: " << cur << std::endl;
+        }
+    }
+
     return 0;
 }
